@@ -1,16 +1,15 @@
-// console.log("ok fool, you got this");
+import './style.css';
 import homePage from "./home.js";
 import menuPage from "./menu.js";
 import aboutPage from "./about.js";
 
 function component() {
   homePage();
-}
 
-home.addEventListener("click", () => {
+  home.addEventListener("click", () => {
     homePage();
   });
-  
+
 menu.addEventListener("click", () => {
   menuPage();
 });
@@ -18,6 +17,8 @@ menu.addEventListener("click", () => {
 about.addEventListener("click", () => {
   aboutPage();
 });
+}
 
-// document.body.appendChild(component());
+
+
 component();

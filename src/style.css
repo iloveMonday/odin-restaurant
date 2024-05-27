@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'script';
+    src: url('./Jacquard12-Regular.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: 'poets';
+    src: url('./PoetsenOne-Regular.ttf') format("truetype");
+}
+
+:root{
+    --brick-fade: linear-gradient(rgba(184, 39, 39, 0) 0%, rgba(184, 39, 39, 1) 40%);
+}
+
+body{
+    margin: 0;
+    padding-bottom: 10%;
+    background-color: goldenrod;
+    background-image: url('./fire.png');
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clicked{
+    background-image: url('./fire.png');
+    background-position: center;
+  }
+
+.conBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-div{
+    width: 500px;
+    background-color: rgb(255, 187, 0);
+    border: 2px solid black;
+    padding: 5px;
+    margin: 50px;
+}
+
+.contact-div h3{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-family: 'script';
+    font-size: 50px;
+    font-weight: 300;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: orange 20px;
+    border: 4px solid #495c2d;
+}
+
+h3{
+    font-family: 'script';
+    font-size: 40px;
+    font-weight: 400;
+}
+
+h4{
+    font-family: 'poets';
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.home-image{
+    border: 5px solid #495c2d;
+    height: 400px;
+    box-shadow: 10px 10px 115px rgb(255, 174, 0);
+    margin-bottom: 30px;
+}
+
+.home-text{
+    font-family: 'poets';
+    font-size: 18px;   
+}
+
+.menu-item{
+    display: grid;
+    width: 100%;
+    margin: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-image: var(--brick-fade);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+  }
+
+  .navbar button{
+    font-family: 'script';
+    font-size: 42px;
+    font-weight: 500;
+    background-color: rgba(0, 255, 255, 0);
+    border: none;
+    background-size: 100px;
+    padding-top: 15px;
+  }
+
+  .navbar button:hover{
+    color: #acd40c    ;
+  }
